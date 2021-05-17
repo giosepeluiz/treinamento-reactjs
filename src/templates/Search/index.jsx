@@ -1,12 +1,12 @@
 import { Component } from 'react';
 import Name from './Name.jsx';
+import Input from "./Input.jsx";
 import './style.scss';
 
 class Search extends Component {
-  
   state = {
-    names: ['Carregando nomes...'],
-    searchValue: ''
+    names: ["Carregando nomes..."],
+    searchValue: "",
   };
 
   componentDidMount() {
@@ -14,7 +14,9 @@ class Search extends Component {
   }
 
   handleListNames = async () => {
-    const response = fetch("https://raw.githubusercontent.com/dominictarr/random-name/master/names.json");
+    const response = fetch(
+      "https://raw.githubusercontent.com/dominictarr/random-name/master/names.json"
+    );
     const [names] = await Promise.all([response]);
     const responseJson = await names.json();
     this.setState({ names: responseJson });
@@ -23,20 +25,20 @@ class Search extends Component {
   handleSearch = (e) => {
     const { value } = e.target;
     this.setState({ searchValue: value });
-  }
+  };
 
   render() {
     const { names, searchValue } = this.state;
-    
-    const filteredNames = !!searchValue ? names.filter(name => (
-      name.toLowerCase().includes(
-        searchValue.toLowerCase()
-      )
-    )) : names;
+
+    const filteredNames = !!searchValue
+      ? names.filter((name) =>
+          name.toLowerCase().includes(searchValue.toLowerCase())
+        )
+      : names;
 
     return (
       <div className="container">
-        <input value={ searchValue } onChange={this.handleSearch} type="text" placeholder="Digite um nome para busca" /><br />
+        <Input searchValue={ searchValue } handleSearch={ this.handleSearch } />
         <Name filteredNames={ filteredNames } />
       </div>
     );

@@ -8,8 +8,6 @@ import './styles/global-styles.scss';
 import Search from './templates/Search';
 
 
-
-
 ReactDOM.render(
   <React.StrictMode>
     <Search />

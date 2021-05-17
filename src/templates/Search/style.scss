@@ -5,13 +5,15 @@
     background: #eee;
     padding: 15px;
     zoom: 2;
-
+    
+    & input {
+      width: 100%;
+      padding: 2px;
+      margin-bottom: 10px;
+    }
   }
 
-  .inputtext {
-    width: 100vw;
-    padding: 2px;
-  }
+  
 
   
   

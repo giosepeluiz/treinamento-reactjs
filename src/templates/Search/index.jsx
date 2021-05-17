@@ -1,12 +1,9 @@
 import { Component } from 'react';
+import Name from './Name.jsx';
 import './style.scss';
 
 class Search extends Component {
-  constructor() {
-    super();
-    console.log("Constructor...");
-  }
-
+  
   state = {
     names: ['Carregando nomes...'],
     searchValue: ''
@@ -37,16 +34,12 @@ class Search extends Component {
       )
     )) : names;
 
-    return  (
-      
+    return (
       <div className="container">
-        <input className="inputtext" value={ searchValue } onChange={this.handleSearch} type="text" placeholder="Digite um nome para busca" /><br /><br />
-        { filteredNames.map(name => (
-          <p>{name}</p>
-        )) }
+        <input value={ searchValue } onChange={this.handleSearch} type="text" placeholder="Digite um nome para busca" /><br />
+        <Name filteredNames={ filteredNames } />
       </div>
-
-    )
+    );
   }
 }
 

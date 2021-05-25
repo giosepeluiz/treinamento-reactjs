@@ -1,11 +1,9 @@
-const Result = ({handleCalculate}) => {
+import P from 'prop-types';
 
-    return(
-        <div>
-            {handleCalculate}
-        </div>
-    )
+export const Result = ({ handleCalculate }) => {
+  return <div>{handleCalculate}</div>;
+};
 
-}
-
-export default Result;
+Result.propTypes = {
+  handleCalculate: P.func,
+};

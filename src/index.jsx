@@ -9,10 +9,9 @@ import './styles/global-styles.scss';
 
 import ImcCalc from './templates/ImcCalc';
 
-
 ReactDOM.render(
   <React.StrictMode>
     <ImcCalc />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

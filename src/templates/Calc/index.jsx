@@ -11,7 +11,7 @@ class Calc extends Component {
 
     handleStateYear = (e) => {
         this.setState({ year: e.target.value });
-        console.log(`debug: ${e.target.value}`)
+        console.log(`debug: ${e.target.value}`);
     }
 
     handleStateBorn = (e) => {
@@ -43,7 +43,7 @@ class Calc extends Component {
 
         )
     }
-    
+
 }
 
 export default Calc;

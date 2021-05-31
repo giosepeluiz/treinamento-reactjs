@@ -32,7 +32,7 @@ class Calc extends Component {
                 return <p>{ `A idade é ${year-born} anos!` }</p>;
             }
 
-        }
+        } 
 
         return(
 

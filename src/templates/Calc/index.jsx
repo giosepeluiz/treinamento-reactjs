@@ -47,3 +47,4 @@ class Calc extends Component {
 }
 
 export default Calc;
+ 

@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Fields } from './Fields';
 import { Result } from './Result';
 import './style.scss';
 
-export const ImcCalc = () => {
+export default function imcCalc() {
   const [weight, setWeight] = useState(0);
   const [height, setHeight] = useState(0);
   const [total, setTotal] = useState(0);
@@ -23,10 +23,11 @@ export const ImcCalc = () => {
       setInfo('Você está com obesidade.');
     } else {
       setInfo('Você está com obesidade mórbida.');
-    }
+    }, []);
 
     setTotal(Math.round(total));
   };
+
 
   return (
     <div className="container">
@@ -34,6 +35,4 @@ export const ImcCalc = () => {
       <Result handleCalculate={handleCalculate} total={total} info={info} />
     </div>
   );
-};
-
-export default ImcCalc;
+}

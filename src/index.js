@@ -6,12 +6,12 @@ import './styles/global-styles.scss';
 //import Calc from './templates/Calc';
 //import Search from './templates/Search';
 //import SearchHook from './templates/SearchHook';
-
-import ImcCalc from './templates/ImcCalc';
+//import ImcCalc from './templates/ImcCalc';
+import Countries from './templates/Countries';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ImcCalc />
+    <Countries />
   </React.StrictMode>,
   document.getElementById('root'),
 );

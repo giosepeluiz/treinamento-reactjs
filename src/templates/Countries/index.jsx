@@ -4,7 +4,7 @@ import './style.css';
 
 /*
  *
- *  useRef() atribui uma referência a um elemento
+ *  useRef() atribui uma referência a um elemento da DOM
  *
  */
 
@@ -42,7 +42,8 @@ CountriesList.propTypes = {
 export default function Countries() {
     const [countries, setCountries] = useState([]);
     const [value, setValue] = useState('');
-    const input = useRef(null)
+    const input = useRef(null); // Referencia o input de classe "input-text"
+    const counter = useRef(0); // Referencia um contador de renderização
 
     useEffect(() => {
     fetch('https://gist.githubusercontent.com/jonasruth/61bde1fcf0893bd35eea/raw/10ce80ddeec6b893b514c3537985072bbe9bb265/paises-gentilicos-google-maps.json')
@@ -51,8 +52,8 @@ export default function Countries() {
     }, []);
 
     useEffect(()=>{
-        input.current.focus()
-        console.log(input.current)
+        input.current.focus() // Dá foco ao input após renderizar
+        counter.current++; // Incrementa ao contador cada vez que renderiza
     })
 
     const handleClick = (value) => {
@@ -62,7 +63,7 @@ export default function Countries() {
   return(
     <div>
         <input type="text" ref={input} className="input-text" value={value} onChange={(e) => setValue(e.target.value)} placeholder="Clique em um país"/>
-
+        <br /><small>Renderizou {counter.current}x</small>
         <ul>
             <CountriesList countries={countries} handleClick={handleClick} />
         </ul>

@@ -16,9 +16,10 @@ import './style.css';
 const CountriesList = ({ countries, handleClick }) => {
   return (
     countries.map((country, index) => {
+        let { nome_pais, gentilico } = country;
         return(
-            <li key={index} onClick={() => handleClick(country.nome_pais)}>
-                <b>{country.nome_pais}</b> ({country.gentilico})
+            <li key={index} onClick={() => handleClick(nome_pais)}>
+                <b>{nome_pais}</b> ({gentilico})
             </li>
         )
     })

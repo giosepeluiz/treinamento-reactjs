@@ -7,11 +7,12 @@ import './styles/global-styles.scss';
 //import Search from './templates/Search';
 //import SearchHook from './templates/SearchHook';
 //import ImcCalc from './templates/ImcCalc';
-import Countries from './templates/Countries';
+//import Countries from './templates/Countries';
+import GameList from './templates/GameList';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Countries />
+    <GameList />
   </React.StrictMode>,
   document.getElementById('root'),
 );

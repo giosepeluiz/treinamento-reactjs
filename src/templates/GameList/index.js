@@ -4,7 +4,7 @@ import AuthProvider from './providers/auth';
 
 const GameList = () => {
   return (
-    //! Provedor global que está em './providers/auth'
+    //! Provedor global que está em './providers/auth'.
     <AuthProvider>
       <App />
     </AuthProvider>

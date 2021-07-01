@@ -74,7 +74,9 @@ const [count, setCount] = useReducer(countReducer, countInicialValue);
 
 Para utilizar nos filhos isso que criamos até agora, basta fazer a importação da função como faríamos no `setState()`, por exemplo:
 
-´´´
+```
 <button onClick={() => setCount('INCREMENT')}>Increment</button>
 <button onClick={() => setCount('DECREMENT')}>Decrement</button>
-´´´
+```
+
+O código está comentado para ajudar na compreensão.

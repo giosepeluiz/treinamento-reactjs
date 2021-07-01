@@ -6,7 +6,8 @@ React Context é uma alternativa ao setState() e ao useState(), enquanto que o R
 
 **Meus passos utilizados para memorizar o uso de React Context nesta aplicação:**
 
-### Context
+
+### CONTECT
 
 Antes de mais nada, vamos criar um contexto global, para armazenar as informações que queremos.
 
@@ -40,7 +41,8 @@ Para utilizar nos filhos o contexto criado, devemos fazer algumas importações 
 
 ```
 
-### Reducer
+
+### REDUCER
 
 Normalmente utilizamos `useState()` para gerenciar informações e dados em componentes, mas num projeto mais complexo, gerenciar com `useState()` fica inviável, para contornar isso nasceu o `useReducer()`. Este recurso deixa o `createContext()` muito próximo do que é o React Redux.
 
@@ -74,7 +76,9 @@ const [count, setCount] = useReducer(countReducer, countInicialValue);
 
 Para utilizar nos filhos isso que criamos até agora, basta fazer a importação da função como faríamos no `setState()`, por exemplo:
 
-´´´
+```
 <button onClick={() => setCount('INCREMENT')}>Increment</button>
 <button onClick={() => setCount('DECREMENT')}>Decrement</button>
-´´´
+```
+
+O código está comentado para ajudar na compreensão.

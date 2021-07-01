@@ -6,5 +6,3 @@ Neste repositório contém arquivos de estudo e de treinamento de ReactJS básic
 
  - **Linguagens utilizadas:**  JavaScript, JSX, HTML e Sass
  - **Runtime:** NodeJS
-
-##

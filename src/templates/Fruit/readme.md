@@ -5,8 +5,9 @@
 React Context é uma alternativa ao setState() e ao useState(), enquanto que o Reducer é uma alternativa ao Redux.
 
 **Meus passos utilizados para memorizar o uso de React Context nesta aplicação:**
-
-### Context
+ 
+  
+### CONTECT
 
 Antes de mais nada, vamos criar um contexto global, para armazenar as informações que queremos.
 
@@ -39,8 +40,9 @@ Para utilizar nos filhos o contexto criado, devemos fazer algumas importações 
 }}>Increment</button>
 
 ```
-
-### Reducer
+ 
+  
+### REDUCER
 
 Normalmente utilizamos `useState()` para gerenciar informações e dados em componentes, mas num projeto mais complexo, gerenciar com `useState()` fica inviável, para contornar isso nasceu o `useReducer()`. Este recurso deixa o `createContext()` muito próximo do que é o React Redux.
 

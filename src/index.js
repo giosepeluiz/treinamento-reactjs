@@ -9,11 +9,12 @@ import './styles/global-styles.scss';
 //import ImcCalc from './templates/ImcCalc';
 //import Countries from './templates/Countries';
 //import GameList from './templates/GameList';
-import Fruit from './templates/Fruit';
+// import Fruit from './templates/Fruit';
+import Posts from './templates/Posts';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Fruit />
+    <Posts />
   </React.StrictMode>,
   document.getElementById('root'),
 );

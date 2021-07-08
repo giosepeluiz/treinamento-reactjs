@@ -3,19 +3,25 @@ import States from './States';
 import Cities from './Cities';
 import './styles.css';
 
+//¿ Cria um contexto inicial
 export const StateContext = createContext();
 
+//¿ Reducer que preenche as informações no estado incial do componente
 const BrazilianCities = () => {
     const stateReducer = (state, action) => {
         switch (action.type) {
           case 'SELECTED':
-            return action.payload;
+            return {...state, stateID: action.payload[0], stateName: action.payload[1]};
           default:
             return state;
         }
     };
 
-    const stateInicialValue = 0;
+    //¡ Estado inicial do componente
+    const stateInicialValue = {
+        stateID: 0,
+        stateName: ''
+    };
     const [state, setState] = useReducer(stateReducer, stateInicialValue);
 
 

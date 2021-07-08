@@ -1,18 +1,39 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .wrapper {
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
+    padding: 10px;
 
 }
 
 .cities {
     flex-grow: 4;
+    text-align: left;
+    vertical-align: middle;
+    align-self:center;
+}
+
+.cities select {
+    padding: 10px;
+    width: 500px;
+    margin-top: 20px;
 }
 
 .states {
     flex-grow: 2;
+}
+
+.states ul li {
+    list-style-type: none;
+    list-style-position: inherit;
+    cursor: pointer;
+}
+
+.states ul li:hover {
+    font-weight: bold;
 }

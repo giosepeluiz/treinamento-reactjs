@@ -10,11 +10,12 @@ import './styles/global-styles.scss';
 //import Countries from './templates/Countries';
 //import GameList from './templates/GameList';
 // import Fruit from './templates/Fruit';
-import Posts from './templates/Posts';
+// import Posts from './templates/Posts';
+import BrazilianCities from './templates/BrazilianCities';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Posts />
+    <BrazilianCities />
   </React.StrictMode>,
   document.getElementById('root'),
 );

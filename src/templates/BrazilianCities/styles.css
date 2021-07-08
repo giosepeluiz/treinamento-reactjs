@@ -1,0 +1,18 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.cities {
+    flex-grow: 4;
+}
+
+.states {
+    flex-grow: 2;
+}

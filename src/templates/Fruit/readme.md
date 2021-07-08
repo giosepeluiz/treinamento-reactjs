@@ -7,7 +7,7 @@ React Context é uma alternativa ao setState() e ao useState(), enquanto que o R
 **Meus passos utilizados para memorizar o uso de React Context nesta aplicação:**
 
 
-### CONTECT
+### CONTEXT
 
 Antes de mais nada, vamos criar um contexto global, para armazenar as informações que queremos.
 

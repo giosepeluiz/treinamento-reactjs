@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useFetch } from './UseFetch';
 
-const CustomHook = () => {
+const CustomHookFetch = () => {
   const [postId, setPostId] = useState('');
   const [result, loading] = useFetch('https://jsonplaceholder.typicode.com/posts/' + postId, {
     headers: {
@@ -39,5 +39,5 @@ const CustomHook = () => {
   return <h1>Oi</h1>;
 };
 
-export default CustomHook;
+export default CustomHookFetch;
 

@@ -12,11 +12,11 @@ import './styles/global-styles.scss';
 // import Fruit from './templates/Fruit';
 // import Posts from './templates/Posts';
 // import BrazilianCities from './templates/BrazilianCities';
-import CustomHook from './templates/CustomHook';
+import CustomHookFetch from './templates/CustomHookFetch';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CustomHook />
+    <CustomHookFetch />
   </React.StrictMode>,
   document.getElementById('root'),
 );

@@ -11,11 +11,12 @@ import './styles/global-styles.scss';
 //import GameList from './templates/GameList';
 // import Fruit from './templates/Fruit';
 // import Posts from './templates/Posts';
-import BrazilianCities from './templates/BrazilianCities';
+// import BrazilianCities from './templates/BrazilianCities';
+import CustomHook from './templates/CustomHook';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrazilianCities />
+    <CustomHook />
   </React.StrictMode>,
   document.getElementById('root'),
 );

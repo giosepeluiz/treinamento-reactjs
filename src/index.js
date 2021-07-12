@@ -13,11 +13,12 @@ import './styles/global-styles.scss';
 // import Posts from './templates/Posts';
 // import BrazilianCities from './templates/BrazilianCities';
 // import CustomHookFetch from './templates/CustomHookFetch';
-import CustomHookAsync from './templates/CustomHookAsync';
+// import CustomHookAsync from './templates/CustomHookAsync';
+import ErrorBoundary from './templates/ErrorBoundary';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CustomHookAsync />
+    <ErrorBoundary />
   </React.StrictMode>,
   document.getElementById('root'),
 );

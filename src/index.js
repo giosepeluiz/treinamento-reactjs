@@ -13,11 +13,12 @@ import ReactDOM from 'react-dom';
 // import BrazilianCities from './templates/BrazilianCities';
 // import CustomHookFetch from './templates/CustomHookFetch';
 // import CustomHookAsync from './templates/CustomHookAsync';
-import CompoundComponents from './templates/CompoundComponents';
+// import CompoundComponents from './templates/CompoundComponents';
+import CodeSplitting from './templates/CodeSplitting';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CompoundComponents />
+    <CodeSplitting />
   </React.StrictMode>,
   document.getElementById('root'),
 );

@@ -7,7 +7,7 @@ import buttonOn from './img/button-on.png';
 import buttonOff from './img/button-off.png';
 
 // Style
-import './style.css';
+import './style.min.css';
 
 //¿ Componente pai que receberá os filhos
 const LightMaster = ({children}) => {

@@ -12,7 +12,8 @@ class Home extends Component {
     posts: []
   }
 
-  //¡ Fetch de posts utilizando promise simples dentro do componentDidMount() 
+
+  //¡ Fetch de posts utilizando promise simples dentro do componentDidMount()
   // componentDidMount(){
   //
   //   fetch('https://jsonplaceholder.cypress.io/posts')
@@ -21,7 +22,7 @@ class Home extends Component {
   // }
 
 
-  //¡ Fetch de posts utilizando "async" fora do componentDidMount() 
+  //¡ Fetch de posts utilizando "async" fora do componentDidMount()
   // componentDidMount(){
   //   this.loadPosts();
   // }
@@ -41,23 +42,23 @@ class Home extends Component {
     const postAndPhotos = await loadPosts();
     this.setState({ posts: postAndPhotos });
   }
-  
+
 
   render(){
-    
+
     const { posts } = this.state;
     //# É o mesmo que --> const posts = this.state.posts;
 
       return (
-        
-        
+
+
         <div>
 
             <section className="container">
                <Posts posts={posts} />
             </section>
 
-            
+
         </div>
 
 

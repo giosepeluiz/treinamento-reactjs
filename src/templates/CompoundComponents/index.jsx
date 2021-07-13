@@ -14,7 +14,7 @@ const LightMaster = ({children}) => {
 
     //¡ Gera um estado inciial para o nosso exemplo
     const [lightNumber, setLightNumber] = useState(1);
-    const setNumber = () => setLightNumber(lightNumber + 1);
+    const setNumber = () => setLightNumber(lightNumber + 1); 
 
     //¡ Map() que retorna as novas propriedades para os filhos
     return (Children.map(children, child => {

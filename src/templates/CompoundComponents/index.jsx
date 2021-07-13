@@ -24,7 +24,7 @@ const LightMaster = ({children}) => {
         })
         return newChild;
     }))
-}
+} 
 
 //¿ Componente filho
 const Light  = ({ lightNumber, setNumber, ...props }) => {

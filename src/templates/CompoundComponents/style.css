@@ -19,9 +19,13 @@ body b {
     flex-wrap: wrap;
 }
 
-.wrap {
+.item {
     transform: scale(0.5);
     width: fit-content;
     display: flex;
     flex-direction: column;
-} 
+}
+
+.first-item {
+    flex: 0 0 100%;
+}

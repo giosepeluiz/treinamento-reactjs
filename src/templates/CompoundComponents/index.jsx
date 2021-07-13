@@ -11,12 +11,20 @@ import './style.css';
 
 //¿ Componente pai que receberá os filhos
 const LightMaster = ({children}) => {
+
     //¡ Gera um estado inciial para o nosso exemplo
     const [lightNumber, setLightNumber] = useState(1);
     const setNumber = () => setLightNumber(lightNumber + 1);
 
     //¡ Map() que retorna as novas propriedades para os filhos
     return (Children.map(children, child => {
+
+        //! Ignora tags que não sejam componentes
+        //! Para tags com child como <div></div> precisa usar Context também
+        if(typeof child.type === 'string') {
+            return child;
+        }
+
         const newChild = cloneElement(child, {
             //! Itens passados como propriedades para os filhos
             lightNumber,  // Número de cliques no elemento
@@ -24,7 +32,7 @@ const LightMaster = ({children}) => {
         })
         return newChild;
     }))
-} 
+}
 
 //¿ Componente filho
 const Light  = ({ lightNumber, setNumber, ...props }) => {
@@ -36,27 +44,28 @@ const Light  = ({ lightNumber, setNumber, ...props }) => {
             case lightOff:
                 setLight(lightOn);
                 setButton(buttonOn);
-                setNumber();
                 // CONSOLE LOG
-                console.log(`LUZ ${props.value} DESLIGADA`);
-                console.log(`-- Interruptores clicados ${lightNumber} vezes no total.`);
+                console.log(`%cLUZ ${props.value} LIGADA`, "color:lightgreen");
             break;
             case lightOn:
                 setLight(lightOff);
                 setButton(buttonOff);
-                setNumber();
                 // CONSOLE LOG
-                console.log(`LUZ ${props.value} LIGADA`);
-                console.log(`-- Interruptores clicados ${lightNumber} vezes no total.`);
+                console.log(`%cLUZ ${props.value} DESLIGADA`, "color:orange");
             break;
             default:
                 setLight(light)
                 setButton(button);
         }
+
+        setNumber();
+
+        // CONSOLE LOG
+        console.log(`-- Interruptores clicados ${lightNumber} vezes no total.`);
     }
 
     return (
-        <div className="wrap">
+        <div className="item">
             <img className="light" src={light} alt="" />
             <img className="button" src={button} alt="" onClick={() => changeLight()} />
         </div>

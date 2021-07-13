@@ -14,11 +14,11 @@ import './styles/global-styles.scss';
 // import BrazilianCities from './templates/BrazilianCities';
 // import CustomHookFetch from './templates/CustomHookFetch';
 // import CustomHookAsync from './templates/CustomHookAsync';
-import ErrorBoundary from './templates/ErrorBoundary';
+import CompoundComponents from './templates/CompoundComponents';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ErrorBoundary />
+    <CompoundComponents />
   </React.StrictMode>,
   document.getElementById('root'),
 );

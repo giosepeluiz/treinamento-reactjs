@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Name from './Name.jsx';
 import Input from "./Input.jsx";
-import './style.scss';
+import './style.min.css';
 
 class Search extends Component {
   state = {

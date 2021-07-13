@@ -86,4 +86,4 @@ const CompoundComponents = () => {
     );
 };
 
-export default CompoundComponents;
+export default CompoundComponents; 

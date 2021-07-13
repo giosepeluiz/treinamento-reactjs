@@ -19,3 +19,4 @@ Result.propTypes = {
   total: P.number,
   info: P.string,
 };
+

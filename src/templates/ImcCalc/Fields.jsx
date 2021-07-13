@@ -10,6 +10,7 @@ export const Fields = ({ setWeight, setHeight }) => {
   );
 };
 
+
 Fields.propTypes = {
   setWeight: P.func,
   setHeight: P.func,

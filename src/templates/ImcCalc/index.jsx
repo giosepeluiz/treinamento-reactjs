@@ -1,7 +1,8 @@
-import { useState, useMemo } from 'react';
+/* eslint-disable */
+import { useState } from 'react';
 import { Fields } from './Fields';
 import { Result } from './Result';
-import './style.scss';
+import './style.min.css';
 
 export default function imcCalc() {
   const [weight, setWeight] = useState(0);
@@ -27,7 +28,6 @@ export default function imcCalc() {
 
     setTotal(Math.round(total));
   };
-
 
   return (
     <div className="container">

@@ -14,11 +14,12 @@ import ReactDOM from 'react-dom';
 // import CustomHookFetch from './templates/CustomHookFetch';
 // import CustomHookAsync from './templates/CustomHookAsync';
 // import CompoundComponents from './templates/CompoundComponents';
-import CodeSplitting from './templates/CodeSplitting';
+// import CodeSplitting from './templates/CodeSplitting';
+import Counter from './templates/Counter';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CodeSplitting />
+    <Counter />
   </React.StrictMode>,
   document.getElementById('root'),
 );

@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
+import Button from '../Button';
 import { useCounterContext } from '../CounterContext';
+import Heading from './../Heading/index';
 
 //¡ Componente Home
 const Home = () => {
@@ -29,7 +31,16 @@ const Home = () => {
 
     return (
         <div>
-            <h1 >Hello World!</h1>
+            <Heading />
+            <div>
+                <Button onButtonClick={actions.decrease}>{`<< Decrease`}</Button>
+                <Button onButtonClick={actions.reset}>{`Reset`}</Button>
+                <Button onButtonClick={actions.increase}>{`Increase >>`}</Button>
+            </div>
+            <div>
+                <Button onButtonClick={() => actions.setCounter({ counter: 10 })}>{`Set 10`}</Button>
+                <Button disabled={state.loading} onButtonClick={actions.asyncIncrease}>{`Async Increase`}</Button>
+            </div>
         </div>
     );
 };

@@ -20,6 +20,14 @@ Depois de criar o contexto, vamos preparar a aplicação para receber o `useRedu
 
 > **NOTA:** Sempre que um arquivo tiver o nome de build, make ou create, trata-se de uma factory, onde criaremos um objeto.
 
+- Agora criaremos o componente de `Button`, a qual será responsável pela inserção de um botão no frontend;
+
+- Em seguida criamos um componente chamado `Heading`, para receber o <h1> com o contador;
+
+> **NOTA:** No Heading chamamos o contexto dentro do arquivo principal, mas é possível mandar propriedades pelo componente principal através das childrens. A mesma coisa acontece com Button, mas nele enviamos propriedades pelo componente.
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-//¡ Aqui vamos definir os tipos para as ações 
+//¡ Aqui vamos definir os tipos para as ações
 
 const prefix = 'CounterContext';
 

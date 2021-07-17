@@ -17,7 +17,7 @@ export const CounterContextProvider = ({ children }) => {
     const actions = useRef(buildActions(dispatch));
 
     return <Context.Provider value={[state, actions.current]}>{children}</Context.Provider>;
-};
+}; 
 
 //¿ Proptypes, necessárias pelo eslint
 CounterContextProvider.propTypes = {

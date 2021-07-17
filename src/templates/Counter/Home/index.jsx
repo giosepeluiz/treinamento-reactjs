@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Button from '../Button';
 import { useCounterContext } from '../CounterContext';
-import Heading from './../Heading/index';
+import Heading from './../Heading';
 
 //¡ Componente Home
 const Home = () => {

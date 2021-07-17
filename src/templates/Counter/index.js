@@ -11,5 +11,5 @@ const Counter = () => {
     </CounterContextProvider>
   );
 };
-
+ 
 export default Counter;

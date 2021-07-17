@@ -10,7 +10,7 @@ export const buildActions = (dispatch) => {
     setCounter: (payload) => dispatch({ type: actionTypes.SET_COUNTER, payload }),
     asyncIncrease: () => asyncIncreaseFn(dispatch),
   };
-};
+}; 
 
 const asyncIncreaseFn = async (dispatch) => {
   dispatch({ type: actionTypes.ASYNC_INCREASE_START });

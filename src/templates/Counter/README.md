@@ -25,11 +25,3 @@ Depois de criar o contexto, vamos preparar a aplicação para receber o `useRedu
 - Em seguida criamos um componente chamado `Heading`, para receber o <h1> com o contador;
 
 > **NOTA:** No Heading chamamos o contexto dentro do arquivo principal, mas é possível mandar propriedades pelo componente principal através das childrens. A mesma coisa acontece com Button, mas nele enviamos propriedades pelo componente.
-
-
-
-
-
-
-
-Mais informações: [cloneElement – React (reactjs.org)](https://pt-br.reactjs.org/docs/react-api.html#cloneelement)

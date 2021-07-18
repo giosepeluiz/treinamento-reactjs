@@ -15,11 +15,12 @@ import ReactDOM from 'react-dom';
 // import CustomHookAsync from './templates/CustomHookAsync';
 // import CompoundComponents from './templates/CompoundComponents';
 // import CodeSplitting from './templates/CodeSplitting';
-import Counter from './templates/Counter';
+// import Counter from './templates/Counter';
+import CapsLock from './templates/CapsLock';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Counter />
+    <CapsLock />
   </React.StrictMode>,
   document.getElementById('root'),
 );

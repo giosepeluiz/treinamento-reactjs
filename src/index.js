@@ -16,11 +16,12 @@ import ReactDOM from 'react-dom';
 // import CompoundComponents from './templates/CompoundComponents';
 // import CodeSplitting from './templates/CodeSplitting';
 // import Counter from './templates/Counter';
-import CapsLock from './templates/CapsLock';
+// import CapsLock from './templates/CapsLock';
+import ReactRouter from './templates/ReactRouter';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CapsLock />
+    <ReactRouter />
   </React.StrictMode>,
   document.getElementById('root'),
 );

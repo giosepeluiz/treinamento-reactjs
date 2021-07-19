@@ -1,0 +1,33 @@
+// IMPORTS
+@import './../../styles/reset.scss';
+
+// VARIABLES
+$link-bg: #a36c07;
+$link-fg: #FFF;
+$link-bg-hover: #e7c48e;
+$link-fg-hover: #000;
+
+#root {
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    li {
+        padding: 1rem;
+        margin: .5rem;
+        box-sizing: border-box;
+        background-color: $link-bg;
+        color: $link-fg;
+
+        li:hover {
+            background-color: $link-bg-hover;
+            color: $link-fg-hover;
+        }
+    }
+}

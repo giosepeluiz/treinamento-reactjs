@@ -17,6 +17,17 @@ O React não vem com roteamento nativo, pois ele é focado na interface de usuá
 
 Já no componente roteado, podemos acessar os parâmetros importando o `{ useParams } from 'react-router-dom'` e utilizando o hook `useParams()`
 
+> **NOTA:** o termo `exact` faz com que aquela rota só seja acessada com 100% de precisão em relação á URL. Caso não coloque `exact`, é importante que coloque a rota mais específica acima das demais por conta da ordem de match, por exemplo:
+
+```
+<Route path="/page/:slug/:id" component={Page} />
+<Route path="/page/:slug" component={Page} />
+<Route path="/page/" component={Page} />
+```
+
+Que é o mesmo que `<Route path="/page/:slug?/:id?" />`
+
+
 **React Router:** [React Router: Declarative Routing for React.js](https://reactrouter.com/web/guides/quick-start)
 
 **Hook Params:** [React Router: Declarative Routing for React.js](https://reactrouter.com/web/example/url-params)

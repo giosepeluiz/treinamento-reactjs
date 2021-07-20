@@ -6,11 +6,25 @@ $link-bg: #a36c07;
 $link-fg: #FFF;
 $link-bg-hover: #e7c48e;
 $link-fg-hover: #000;
+$page-fg: #000;
+$page-red: #fd3636;
+$page-blue: #428cfc;
+$page-green: #3b9c3b;
 
 #root {
     padding: 20px;
     text-align: center;
-    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+a {
+    color: $link-fg;
+    text-decoration: none;
+
+    &:hover {
+        color: $link-fg-hover;
+    }
 }
 
 ul {
@@ -18,16 +32,36 @@ ul {
     flex-direction: row;
     justify-content: center;
 
-    li {
+    & li {
         padding: 1rem;
         margin: .5rem;
         box-sizing: border-box;
         background-color: $link-bg;
-        color: $link-fg;
 
-        li:hover {
+
+
+        &:hover {
             background-color: $link-bg-hover;
-            color: $link-fg-hover;
         }
+    }
+}
+
+.page-home, .page-about, .page-contact {
+    width: 100%;
+    height: 100vw;
+    padding-top: 50px;
+    color: $page-fg;
+    font-weight: bold;
+}
+
+.page {
+    &-home {
+        background-color: $page-red;
+    }
+    &-about {
+        background-color: $page-green;
+    }
+    &-contact {
+        background-color: $page-blue;
     }
 }

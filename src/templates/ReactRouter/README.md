@@ -6,7 +6,7 @@ O React não vem com roteamento nativo, pois ele é focado na interface de usuá
 - Depois importamos no arquivo principal `App` os pacotes `{ BrowserRouter, Route, Switch, Link }`, onde:
 - - **`BrowserRouter`** é um tipo de invólucro (provider) para a aplicação, que permite que as rotas sejam feitas;
 - - **`Route`** define quais serão as rotas, colocadas dentro de componentes;
-- - **`Switch`** define o grupo de rotas a serem acessados pelo menu;
+- - **`Switch`** define o grupo de rotas a serem acessados pelo menu, ele garante que sómente uma rota será acessada (via match com o link);
 -  - **`Link`** é cada item do menu, onde deve estar dentro do `Switch`.
 
 > **NOTA:** é interessante que as rotas estejam dentro de pastas próprias em `templates` ou `pages` e o menu esteja num componente próprio chamado `Menu`.

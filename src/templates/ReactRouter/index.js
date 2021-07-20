@@ -12,7 +12,7 @@ const ReactRouter = () => {
       <Menu />
       <Switch>
         <Route path="/" component={Home} exact />
-        <Route path="/about" component={About} exact />
+        <Route path="/about/:slug?/:id?" component={About} exact />
         <Route path="/contact" component={Contact} exact />
       </Switch>
     </BrowserRouter>

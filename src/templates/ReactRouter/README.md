@@ -11,4 +11,12 @@ O React não vem com roteamento nativo, pois ele é focado na interface de usuá
 
 > **NOTA:** é interessante que as rotas estejam dentro de pastas próprias em `templates` ou `pages` e o menu esteja num componente próprio chamado `Menu`.
 
-**Leia mais:** [React Router: Declarative Routing for React.js](https://reactrouter.com/web/guides/quick-start)
+### Rotas com ID dinâmico
+
+É possível criar rotas com slug ou ID, para isso basta usar `/:slug?` ou `:id?`, por exemplo. Onde o os **dois pontos** identificam que se trata de uma rota dinâmica e o **interrogação** diz que se trata de uma rota opcional. Se não tiver a interrogação, a rota não será acessada, nem mesmo aquela definida como estática.
+
+Já no componente roteado, podemos acessar os parâmetros importando o `{ useParams } from 'react-router-dom'` e utilizando o hook `useParams()`
+
+**React Router:** [React Router: Declarative Routing for React.js](https://reactrouter.com/web/guides/quick-start)
+
+**Hook Params:** [React Router: Declarative Routing for React.js](https://reactrouter.com/web/example/url-params)

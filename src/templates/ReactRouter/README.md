@@ -25,7 +25,7 @@ Já no componente roteado, podemos acessar os parâmetros importando o `{ usePar
 <Route path="/page/" component={Page} />
 ```
 
-Que é o mesmo que `<Route path="/page/:slug?/:id?" />`
+Que é o mesmo que `<Route path="/page/:slug?/:id?" component={Page} />`
 
 
 **React Router:** [React Router: Declarative Routing for React.js](https://reactrouter.com/web/guides/quick-start)
